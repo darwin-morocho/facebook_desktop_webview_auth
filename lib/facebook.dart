@@ -16,11 +16,14 @@ class FacebookSignInArgs extends ProviderArgs {
   final host = 'www.facebook.com';
 
   @override
-  final path = '/v13.0/dialog/oauth';
+  String get path => '/$version/dialog/oauth';
+
+  final String version;
 
   FacebookSignInArgs({
     required this.clientId,
     required this.scope,
+    required this.version,
   });
 
   String state = '';

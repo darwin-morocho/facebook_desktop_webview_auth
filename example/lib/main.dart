@@ -51,6 +51,7 @@ class MyApp extends StatelessWidget {
                   FacebookSignInArgs(
                     clientId: FACEBOOK_CLIENT_ID,
                     scope: 'email,public_profile',
+                    version: 'v13.0',
                   ),
                 ),
               ),
